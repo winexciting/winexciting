@@ -50,7 +50,7 @@ const TOURS = [
       "Pedalata dolce tra Erbusco e il lago d'Iseo, con soste in due maison per capire il metodo classico italiano, calice alla mano.",
     img: "franciacorta",
   },
-{
+  {
     id: 4,
     titolo: "Chianti Classico: la via del Gallo Nero",
     regione: "Toscana",
@@ -215,7 +215,8 @@ export default function WinexcitingHome() {
         a { text-decoration: none; }
         .nav-link { color: ${C.crema}; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; opacity: 0.8; transition: opacity .2s, color .2s; }
         .nav-link:hover { opacity: 1; color: ${C.lime}; }
-        .tour-card { background: #fff; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; cursor: pointer; border-radius: 6px; }
+        .tour-card { background: #fff; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; cursor: pointer; border-radius: 6px; display: flex; flex-direction: column; height: 100%; }
+        .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
         .tour-card:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(29,33,28,0.18); }
         .tour-card:hover .tour-img { transform: scale(1.05); }
         .tour-img { transition: transform .4s ease; }
@@ -356,7 +357,7 @@ export default function WinexcitingHome() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
               gap: 28,
             }}
           >
@@ -370,7 +371,7 @@ export default function WinexcitingHome() {
                     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
                 </div>
-                <div style={{ padding: 24 }}>
+                <div className="tour-body">
                   <div
                     style={{
                       fontSize: 11,
@@ -406,6 +407,7 @@ export default function WinexcitingHome() {
                       background: GRAD,
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
+                      marginTop: "auto",
                     }}
                   >
                     Scopri di più →
