@@ -50,6 +50,15 @@ const TOURS = [
       "Pedalata dolce tra Erbusco e il lago d'Iseo, con soste in due maison per capire il metodo classico italiano, calice alla mano.",
     img: "franciacorta",
   },
+{
+    id: 4,
+    titolo: "Chianti Classico: la via del Gallo Nero",
+    regione: "Toscana",
+    durata: "2 giorni",
+    descrizione:
+      "Da Greve a Castellina tra pievi, castelli e cantine simbolo del Sangiovese, con degustazione verticale e cena in fattoria.",
+    img: "chianti",
+  },
 ];
 
 const REGIONI = [
