@@ -14,4 +14,4 @@ npm run dev
 Il sito è pubblicato su Cloudflare Pages, collegato a questo repository.
 Build command: `npm run build` — Output: `dist`
 Ogni push su `main` pubblica automaticamente la nuova versione.
-
+<!-- rebuild -->
