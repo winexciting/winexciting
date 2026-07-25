@@ -1,0 +1,6 @@
+import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import L from "leaflet";
+...
+export default function Mappa({ markers = [], center, zoom, flyFrom, height = 440 }) {
+  ...
