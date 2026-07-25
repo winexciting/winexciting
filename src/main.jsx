@@ -204,3 +204,8 @@ export default function App() {
     </BrowserRouter>
   );
 }
+import ReactDOM from "react-dom/client";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
