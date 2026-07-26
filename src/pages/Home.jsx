@@ -193,7 +193,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/* ===== CONTATTO ===== */}
+<section style={{ padding: "clamp(60px, 8vw, 100px) clamp(20px, 5vw, 64px)", background: C.cremaScuro }}>
+  <div style={{ maxWidth: 640, margin: "0 auto" }}>
+    <SectionTitle eyebrow="Scrivici" title="Hai una domanda o una proposta?" />
+    <ContactForm />
+  </div>
+</section>
       {/* ===== IL PROGETTO ===== */}
       <section
         id="il-progetto"
